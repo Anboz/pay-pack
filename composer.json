@@ -1,0 +1,37 @@
+{
+  "name": "alif-pay/package",
+  "description": "Online pay",
+  "type": "library",
+  "version": "1.0.0",
+  "require": {
+    "php": "7.4.4"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Anboz",
+      "email": "sultonovanboz@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "AlifPay\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "AlifPay\\Providers\\ServiceProvider"
+      ],
+      "aliases": {
+        "AlifPay": "AlifPay\\Facades\\AlifPayFacade"
+      }
+    }
+  },
+  "minimum-stability": "dev"
+}
